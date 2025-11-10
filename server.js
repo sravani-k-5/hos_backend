@@ -25,13 +25,13 @@ mongoose.connect('mongodb+srv://sravanikondapallisravani_db_user:3LTzt4JC7ByuisX
 .catch(err => console.log('❌ MongoDB connection error:', err));
 
 // Routes
-const patientRoutes = require('./routes/patient');
-const doctorRoutes = require('./routes/doctor');
-const appointmentRoutes = require('./routes/appointment');
+const patientRoutes = require('./routes/Patient');
+const doctorRoutes = require('./routes/Doctor');
+const appointmentRoutes = require('./routes/Appointment');
 
-app.use('/patients', patientRoutes);
-app.use('/doctors', doctorRoutes);
-app.use('/appointments', appointmentRoutes);
+app.use('/Patients', patientRoutes);
+app.use('/Doctors', doctorRoutes);
+app.use('/Appointments', appointmentRoutes);
 
 // Start server
 app.listen(PORT, () => {
