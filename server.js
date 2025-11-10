@@ -25,7 +25,7 @@ mongoose.connect('mongodb+srv://sravanikondapallisravani_db_user:3LTzt4JC7ByuisX
 .catch(err => console.log('❌ MongoDB connection error:', err));
 
 // Routes
-const patientRoutes = require('./routes/Patient');
+const patientRoutes = require('./routes/patient');
 const doctorRoutes = require('./routes/Doctor');
 const appointmentRoutes = require('./routes/Appointment');
 
